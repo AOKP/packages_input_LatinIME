@@ -58,6 +58,16 @@
             android:defaultValue="@string/voice_mode_main" />
     </PreferenceCategory>
     <PreferenceCategory
+        android:title="@string/aokp_category"
+        android:key="aokp_settings">
+	    <CheckBoxPreference
+	            android:key="volume_cursor"
+	            android:title="@string/prefs_volume_cursor"
+	            android:summary="@string/prefs_volume_cursor_summary"
+	            android:persistent="true"
+	            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
         android:title="@string/correction_category"
         android:key="correction_settings">
         <PreferenceScreen
