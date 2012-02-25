@@ -1099,15 +1099,13 @@ public class LatinIME extends InputMethodServiceCompatWrapper implements Keyboar
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        final LatinKeyboardView keyboardView = mKeyboardSwitcher.getKeyboardView();
-
         switch (keyCode) {
         case KeyEvent.KEYCODE_BACK:
             if (event.getRepeatCount() == 0) {
                 if (mSuggestionsView != null && mSuggestionsView.handleBack()) {
                     return true;
                 }
-
+                final LatinKeyboardView keyboardView = mKeyboardSwitcher.getKeyboardView();
                 if (keyboardView != null && keyboardView.handleBack()) {
                     return true;
                 }
