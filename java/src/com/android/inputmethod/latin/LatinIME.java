@@ -465,6 +465,27 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         resetContactsDictionary(null == mSuggest ? null : mSuggest.getContactsDictionary());
     }
 
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode == KeyEvent.KEYCODE_VOLUME_UP || keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
+			if (mSettingsValues.mVolumeCursor && isInputViewShown()) {
+				sendDownUpKeyEvents(keyCode == KeyEvent.KEYCODE_VOLUME_UP 
+						? KeyEvent.KEYCODE_DPAD_RIGHT : KeyEvent.KEYCODE_DPAD_LEFT);
+				return true;
+			}
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public boolean onKeyUp(int keyCode, KeyEvent event) {
+		if (mSettingsValues.mVolumeCursor && isInputViewShown() &&
+				(keyCode == KeyEvent.KEYCODE_VOLUME_UP || keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)) {
+			return true;
+		}
+		return super.onKeyUp(keyCode, event);
+	}
+
     private void initSuggest() {
         final Locale subtypeLocale = mSubtypeSwitcher.getCurrentSubtypeLocale();
         final String localeStr = subtypeLocale.toString();
