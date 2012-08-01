@@ -43,8 +43,8 @@
         <item name="keyHintLabelRatio">@fraction/key_hint_label_ratio</item>
         <item name="keyShiftedLetterHintRatio">@fraction/key_uppercase_letter_ratio</item>
         <item name="keyTextStyle">normal</item>
-        <item name="keyTextColor">#FFFFFFFF</item>
-        <item name="keyTextInactivatedColor">#FFFFFFFF</item>
+        <item name="keyTextColor">@color/KVkeyTextColor</item>
+        <item name="keyTextInactivatedColor">@color/KVkeyTextInactivatedColor</item>
         <item name="keyHintLetterColor">#80000000</item>
         <item name="keyHintLabelColor">#E0E0E4E5</item>
         <item name="keyShiftedLetterHintInactivatedColor">#66E0E4E5</item>
@@ -302,17 +302,17 @@
         <item name="android:background">@drawable/keyboard_background_holo</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_ics</item>
         <item name="keyTextStyle">bold</item>
-        <item name="keyTextInactivatedColor">#66E0E4E5</item>
-        <item name="keyHintLetterColor">#80000000</item>
-        <item name="keyHintLabelColor">#A0FFFFFF</item>
-        <item name="keyShiftedLetterHintInactivatedColor">#66E0E4E5</item>
-        <item name="keyShiftedLetterHintActivatedColor">#FFFFFFFF</item>
+        <item name="keyTextInactivatedColor">@color/keyTextInactivatedColor</item>
+        <item name="keyHintLetterColor">@color/keyHintLetterColor</item>
+        <item name="keyHintLabelColor">@color/keyHintLabelColor</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/keyShiftedLetterHintInactivatedColor</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/keyShiftedLetterHintActivatedColor</item>
         <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_ics</item>
         <item name="keyPreviewLeftBackground">@drawable/keyboard_key_feedback_left_ics</item>
         <item name="keyPreviewRightBackground">@drawable/keyboard_key_feedback_right_ics</item>
-        <item name="keyPreviewTextColor">#FFFFFFFF</item>
+        <item name="keyPreviewTextColor">@color/keyPreviewTextColor</item>
         <item name="keyPreviewOffset">@dimen/key_preview_offset_ics</item>
-        <item name="shadowColor">#00000000</item>
+        <item name="shadowColor">@color/shadowColor</item>
         <item name="shadowRadius">0.0</item>
     </style>
     <style
@@ -353,10 +353,10 @@
     >
         <item name="suggestionStripOption">autoCorrectBold|validTypedWordBold</item>
         <!-- android:color/holo_blue_light=#FF33B5E5 -->
-        <item name="colorValidTypedWord">@android:color/holo_blue_light</item>
-        <item name="colorTypedWord">@android:color/holo_blue_light</item>
-        <item name="colorAutoCorrect">@android:color/holo_blue_light</item>
-        <item name="colorSuggested">@android:color/holo_blue_light</item>
+        <item name="colorValidTypedWord">@color/colorValidTypedWord</item>
+        <item name="colorTypedWord">@color/colorTypedWord</item>
+        <item name="colorAutoCorrect">@color/colorAutoCorrect</item>
+        <item name="colorSuggested">@color/colorSuggested</item>
         <item name="alphaValidTypedWord">85</item>
         <item name="alphaTypedWord">85</item>
         <item name="alphaSuggested">70</item>
