@@ -45,10 +45,10 @@
         <item name="keyTypeface">normal</item>
         <item name="keyTextColor">#FFFFFFFF</item>
         <item name="keyTextInactivatedColor">#FFFFFFFF</item>
-        <item name="keyHintLetterColor">#80000000</item>
-        <item name="keyHintLabelColor">#E0E0E4E5</item>
+        <item name="keyHintLetterColor">#80E0E4E5</item>
+        <item name="keyHintLabelColor">#A0FFFFFF</item>
         <item name="keyShiftedLetterHintInactivatedColor">#66E0E4E5</item>
-        <item name="keyShiftedLetterHintActivatedColor">#CCE0E4E5</item>
+        <item name="keyShiftedLetterHintActivatedColor">#FFFFFFFF</item>
         <item name="keyLabelHorizontalPadding">@dimen/key_label_horizontal_padding</item>
         <item name="keyHintLetterPadding">@dimen/key_hint_letter_padding</item>
         <item name="keyPopupHintLetterPadding">@dimen/key_popup_hint_letter_padding</item>
