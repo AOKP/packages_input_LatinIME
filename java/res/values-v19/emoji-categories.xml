@@ -890,6 +890,28 @@
         name="emoji_emoticons"
         format="string"
     >
+        <item>:)</item>
+        <item>:D</item>
+        <item>;)</item>
+        <item>;D</item>
+        <item>;P</item>
+        <item>:!</item>
+        <item>:$</item>
+        <item>B)</item>
+        <item>:O</item>
+        <item>:*</item>
+        <item>xD</item>
+        <item>xP</item>
+        <item>:/</item>
+        <item>:(</item>
+        <item>O:)</item>
+        <item>>:(</item>
+        <item>\\o/</item>
+        <item>&gt;_&lt;</item>
+        <item>O.o</item>
+        <item>&lt;3</item>
+        <item>&lt;@:)</item>
+        <item>;_;</item>
         <item>=-O</item>
         <item>:-P</item>
         <item>;-)</item>
@@ -905,5 +927,6 @@
         <item>:-\\</item>
         <item>O:-)</item>
         <item>:-[</item>
+        <item>(=^.^=)</item>
     </array>
 </resources>
