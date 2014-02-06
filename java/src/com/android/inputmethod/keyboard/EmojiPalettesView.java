@@ -97,6 +97,7 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
     public static final int CATEGORY_ID_PLACES = 4;
     public static final int CATEGORY_ID_SYMBOLS = 5;
     public static final int CATEGORY_ID_EMOTICONS = 6;
+    public static final int CATEGORY_ID_SPECIAL = 7;
 
     private static class CategoryProperties {
         public int mCategoryId;
@@ -115,7 +116,8 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
                 "nature",
                 "places",
                 "symbols",
-                "emoticons" };
+                "emoticons",
+                "special" };
         private static final int[] sCategoryIcon = new int[] {
                 R.drawable.ic_emoji_recent_light,
                 R.drawable.ic_emoji_people_light,
@@ -123,9 +125,10 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
                 R.drawable.ic_emoji_nature_light,
                 R.drawable.ic_emoji_places_light,
                 R.drawable.ic_emoji_symbols_light,
+                0,
                 0 };
         private static final String[] sCategoryLabel =
-                { null, null, null, null, null, null, ":-)" };
+                { null, null, null, null, null, null, ":-)", "╪" };
         private static final int[] sCategoryElementId = {
                 KeyboardId.ELEMENT_EMOJI_RECENTS,
                 KeyboardId.ELEMENT_EMOJI_CATEGORY1,
@@ -133,7 +136,8 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
                 KeyboardId.ELEMENT_EMOJI_CATEGORY3,
                 KeyboardId.ELEMENT_EMOJI_CATEGORY4,
                 KeyboardId.ELEMENT_EMOJI_CATEGORY5,
-                KeyboardId.ELEMENT_EMOJI_CATEGORY6 };
+                KeyboardId.ELEMENT_EMOJI_CATEGORY6,
+                KeyboardId.ELEMENT_EMOJI_CATEGORY7 };
         private final SharedPreferences mPrefs;
         private final int mMaxPageKeyCount;
         private final KeyboardLayoutSet mLayoutSet;
@@ -170,6 +174,7 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
             }
             addShownCategoryId(CATEGORY_ID_SYMBOLS);
             addShownCategoryId(CATEGORY_ID_EMOTICONS);
+            addShownCategoryId(CATEGORY_ID_SPECIAL);
             getKeyboard(CATEGORY_ID_RECENTS, 0 /* cagetoryPageId */)
                     .loadRecentKeys(mCategoryKeyboardMap.values());
         }

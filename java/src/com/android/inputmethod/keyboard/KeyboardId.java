@@ -61,6 +61,7 @@ public final class KeyboardId {
     public static final int ELEMENT_EMOJI_CATEGORY4 = 14;
     public static final int ELEMENT_EMOJI_CATEGORY5 = 15;
     public static final int ELEMENT_EMOJI_CATEGORY6 = 16;
+    public static final int ELEMENT_EMOJI_CATEGORY7 = 17;
 
     public final InputMethodSubtype mSubtype;
     public final Locale mLocale;
@@ -231,6 +232,7 @@ public final class KeyboardId {
         case ELEMENT_EMOJI_CATEGORY4: return "emojiCategory4";
         case ELEMENT_EMOJI_CATEGORY5: return "emojiCategory5";
         case ELEMENT_EMOJI_CATEGORY6: return "emojiCategory6";
+        case ELEMENT_EMOJI_CATEGORY7: return "emojiCategory7";
         default: return null;
         }
     }
