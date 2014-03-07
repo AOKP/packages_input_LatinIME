@@ -128,7 +128,7 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
                 0,
                 0 };
         private static final String[] sCategoryLabel =
-                { null, null, null, null, null, null, ":-)", "╪" };
+                { null, null, null, null, null, null, ":)", "╪" };
         private static final int[] sCategoryElementId = {
                 KeyboardId.ELEMENT_EMOJI_RECENTS,
                 KeyboardId.ELEMENT_EMOJI_CATEGORY1,
